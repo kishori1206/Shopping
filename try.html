@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Practical-10</title>
+
+     <link rel="stylesheet" href="styles.css">
+
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+     <style>
+          * {
+               padding: 0;
+               margin: 0;
+               box-sizing: border-box;
+               font-family: Arial, Helvetica, sans-serif;
+          }
+
+          .header {
+               width: 100%;
+               height: 70px;
+               background-color: #2f3640;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+
+          }
+
+          .header img {
+               width: 70px;
+               height: 70px;
+               margin-right: 15px;
+
+          }
+
+          .header h1 {
+               line-height: 70px;
+               color: white;
+
+          }
+
+          .content {
+               width: 100%;
+               padding:20px;
+               transition:.5s;
+               float:right;
+          }
+
+          .content img {
+               width: 100%;
+               max-width: 700px;
+               display: block;
+               margin: auto;
+
+          }
+
+          .content p {
+               text-align: justify;
+               margin-top: 15px;
+          }
+
+          .sidebar {
+               width: 50%;
+               height: 100%;
+               position: fixed;
+               top: 70px;
+               background-color: #353b48;
+               margin: 0;
+               left:-100%;
+               transition: .7s;
+          }
+
+         
+          
+
+          .sidebar a i {
+               margin: 10px;
+          }
+
+          
+
+          .social {
+               display: flex;
+               justify-content: space-evenly;
+               align-items: center;
+               font-size: 30px;
+               border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+               padding: 15px 25px;
+               border-top: 2px solid rgba(255, 255, 255, 0.1);
+               margin-top: 200px;
+          }
+
+          i {
+               font-size: 30px;
+               color: white;
+          }
+
+          .show-btn, .hide-btn{
+               font-size:30px;
+               color:white;
+               position:fixed;
+               top:20px;
+               left: 30px;
+               transition: .5s;
+          }
+          .hide-btn{
+               opacity: 0;
+          }
+
+          #chk {
+            
+            visibility: hidden;
+            
+
+        }
+
+
+          #chk:checked ~ .sidebar{
+               left:0;
+          }
+          #chk:checked ~ .show-btn{
+               opacity: 0;
+          }
+          #chk:checked ~ .hide-btn{
+               opacity: 1;
+          }
+
+          #chk:checked ~ .content{
+               width:82%;
+          }
+
+          @media(max-width:768px ){
+               .sidebar{
+                    width: 100%;
+                    text-align: center;
+               }
+               .header h1{
+                    display: none;
+               }
+          }
+
+     </style>
+</head>
+
+<body>
+
+     <div class="header">
+          <img src="../images/logo.png" alt="">
+          <h1>FULL STACK</h1>
+     </div>
+
+     <input type="checkbox" name="" id="chk">
+     <label for="chk" class="show-btn">
+          <i class="fa fa-bars"></i>
+     </label>
+     <label for="chk" class="hide-btn">
+          <i class="fa fa-times"></i>
+     </label>
+
+     <div class="sidebar">
+          <div class="main" id="shopping-cart">
+
+               <section class="container content-section">
+                   <h2 class="section-header">CART</h2>
+                   <div class="cart-row">
+                       <span class="cart-item cart-header cart-column">ITEM</span>
+                       <span class="cart-price cart-header cart-column">PRICE</span>
+                       <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                   </div>
+                   <div class="cart-items">
+                   </div>
+                   <div class="cart-total">
+                       <strong class="cart-total-title">Total</strong>
+                       <span class="cart-total-price">Rs0</span>
+                   </div>
+                   <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+               </section>
+           </div>
+     </div>
+
+
+     
+
+       
+          <div class="shop-item">
+               <span class="shop-item-title">Party Plate Set</span>
+               <img class="shop-item-image" src="Images/plate.png">
+               <div class="shop-item-details">
+                   <span class="shop-item-price">Rs399</span>
+                   <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+               </div>
+           </div>
+
+           <div class="shop-item">
+               <span class="shop-item-title">Smiley Balloon</span>
+               <img class="shop-item-image" src="Images/smiley ballons.jpg">
+               <div class="shop-item-details">
+                   <span class="shop-item-price">Rs250</span>
+                   <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+               </div>
+           </div>
+
+     
+     <script src="store.js"></script>
+
+</body>
+
+</html>

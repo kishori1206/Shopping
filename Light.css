@@ -1,0 +1,205 @@
+.Light{
+     height: 100%;
+     width: 100%;
+     background-color: black;
+     text-align: center;
+     font-style: italic;
+     justify-content: center;
+}
+
+.Light h7 {
+     margin: 0;
+     padding: 0;
+     /* color: #111; */
+     font-size: 8em;
+}
+
+.Light h7 span {
+     display: table-cell;
+     margin: 0;
+     padding: 0;
+     animation: animate 3s linear infinite;
+     /* transition: 4s; */
+}
+
+.Light h7 span:nth-child(1) {
+     animation-delay: 0s;
+}
+
+.Light h7 span:nth-child(2) {
+     animation-delay: 0.25s;
+}
+
+.Light h7 span:nth-child(2) {
+     animation-delay: 0.45s;
+}
+
+.Light  h7 span:nth-child(4) {
+     animation-delay: 0.75s;
+}
+
+.Light  h7 span:nth-child(5) {
+     animation-delay: 1s;
+}
+
+.Light  h7 span:nth-child(6) {
+     animation-delay: 1.25s;
+}
+
+.Light  h7 span:nth-child(7) {
+     animation-delay: 1.5s;
+}
+
+.Light  h7 span:nth-child(8) {
+     animation-delay: 1.75s;
+}
+
+.Light  h7 span:nth-child(9) {
+     animation-delay: 2s;
+}
+
+.Light  h7 span:nth-child(10) {
+     animation-delay: 2.25s;
+}
+
+.Light  h7 span:nth-child(11) {
+     animation-delay: 2.5s;
+}
+
+.Light  h7 span:nth-child(12) {
+     animation-delay: 2.75s;
+}
+
+@keyframes animate {
+
+     0%,
+     100% {
+          color: #fff;
+          filter: blur(2px);
+          text-shadow: 0 0 10px #52014e  ,
+               0 0 20px #570150  ,
+               0 0 40px #690161  ,
+               0 0 80px  #5e064f ,
+               0 0 120px #2e0123  ,
+               0 0 200px #5a0e56  ,
+               0 0 300px #1d011b ,
+               0 0 400px #3b0839 ;
+
+
+     }
+
+     6%,
+     94% {
+          color: grey;
+          filter: blur(0px);
+          text-shadow: none;
+     }
+
+    
+
+}
+
+@media (max-width: 750px) {
+     
+     .Light{
+          height: 100%;
+          width:62%;
+          /* background-color: black; */
+          text-align: center;
+          font-style: italic;
+          justify-content: center;
+     }
+     
+     .Light h7 {
+          margin: 0;
+          padding: 0;
+          /* color: #111; */
+          font-size: 3em;
+     }
+     
+     .Light h7 span {
+          display: table-cell;
+          margin: 0;
+          padding: 0;
+          animation: animate 3s linear infinite;
+          /* transition: 4s; */
+     }
+     
+     .Light h7 span:nth-child(1) {
+          animation-delay: 0s;
+     }
+     
+     .Light h7 span:nth-child(2) {
+          animation-delay: 0.25s;
+     }
+     
+     .Light h7 span:nth-child(2) {
+          animation-delay: 0.45s;
+     }
+     
+     .Light  h7 span:nth-child(4) {
+          animation-delay: 0.75s;
+     }
+     
+     .Light  h7 span:nth-child(5) {
+          animation-delay: 1s;
+     }
+     
+     .Light  h7 span:nth-child(6) {
+          animation-delay: 1.25s;
+     }
+     
+     .Light  h7 span:nth-child(7) {
+          animation-delay: 1.5s;
+     }
+     
+     .Light  h7 span:nth-child(8) {
+          animation-delay: 1.75s;
+     }
+     
+     .Light  h7 span:nth-child(9) {
+          animation-delay: 2s;
+     }
+     
+     .Light  h7 span:nth-child(10) {
+          animation-delay: 2.25s;
+     }
+     
+     .Light  h7 span:nth-child(11) {
+          animation-delay: 2.5s;
+     }
+     
+     .Light  h7 span:nth-child(12) {
+          animation-delay: 2.75s;
+     }
+     
+     @keyframes animate {
+     
+          0%,
+          100% {
+               color: #fff;
+               filter: blur(2px);
+               text-shadow: 0 0 10px #0274df  ,
+                    0 0 20px #0274df  ,
+                    0 0 40px #0274df  ,
+                    0 0 80px  #0274df ,
+                    0 0 120px #0274df  ,
+                    0 0 200px #0274df  ,
+                    0 0 300px #0274df ,
+                    0 0 400px #0274df ;
+     
+     
+          }
+     
+          6%,
+          94% {
+               color: grey;
+               filter: blur(0px);
+               text-shadow: none;
+          }
+     
+         
+     
+     }
+     
+ }
